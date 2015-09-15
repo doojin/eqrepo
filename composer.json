@@ -1,0 +1,14 @@
+{
+  "name": "dmitry.papka/eqrepo",
+  "description": "Performs search of earthquakes by specified parameters",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Dmitry Papka",
+      "email": "dmitry.papka@gmail.com"
+    }
+  ],
+  "require": {}
+}

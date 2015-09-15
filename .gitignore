@@ -1,0 +1,7 @@
+vendor/
+.idea/
+.vagrant/
+
+Vagrantfile
+bootstrap.sh
+index.php
