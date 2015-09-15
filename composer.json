@@ -10,5 +10,13 @@
       "email": "dmitry.papka@gmail.com"
     }
   ],
-  "require": {}
+  "autoload": {
+    "psr-4": {
+      "Eqrepo\\": "src"
+    }
+  },
+  "require": {},
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  }
 }
