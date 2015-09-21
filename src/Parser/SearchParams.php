@@ -8,10 +8,10 @@ namespace Eqrepo\Parser;
  */
 class SearchParams
 {
-    const ORDER_TIME_ASC = 1;
-    const ORDER_TIME_DESC = 2;
-    const ORDER_MAG_ASC = 3;
-    const ORDER_MAG_DESC = 4;
+    const ORDER_TIME_ASC = 'time-asc';
+    const ORDER_TIME_DESC = 'time';
+    const ORDER_MAG_ASC = 'magnitude-asc';
+    const ORDER_MAG_DESC = 'magnitude';
 
     /**
      * Start time of earthquakes
@@ -28,28 +28,28 @@ class SearchParams
     private $endTime;
 
     /**
-     * Minimal latitude of earthquakes
+     * Minimal latitude of earthquakes (-90..90)
      *
      * @var float
      */
     private $minLatitude;
 
     /**
-     * Maximal latitude of earthquakes
+     * Maximal latitude of earthquakes (-90..90)
      *
      * @var float
      */
     private $maxLatitude;
 
     /**
-     * Minimal longitude of earthquakes
+     * Minimal longitude of earthquakes (-180..180)
      *
      * @var float
      */
     private $minLongitude;
 
     /**
-     * Maximal longitude of earthquakes
+     * Maximal longitude of earthquakes (-180..180)
      *
      * @var float
      */
@@ -70,14 +70,14 @@ class SearchParams
     private $maxMagnitude;
 
     /**
-     * Minimal depth (km) of earthquakes (-100..100)
+     * Minimal depth (km) of earthquakes (-100..1000)
      *
      * @var float
      */
     private $minDepth;
 
     /**
-     * Maximal depth (km) of earthquakes (-100..100)
+     * Maximal depth (km) of earthquakes (-100..1000)
      *
      * @var float
      */
